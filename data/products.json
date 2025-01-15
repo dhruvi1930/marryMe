@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Blue and Cream Family Ensemble",
+    "description": "A beautiful family ensemble in blue and cream hues, perfect for family portraits or special events.",
+    "price": 150000,
+    "seller": "Fashion House",
+    "stock": 10,
+    "images": [
+      {
+        "public_id": "marryme/products/37_jmi2re",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883448/marryme/37_jmi2re.jpg"
+      }
+    ],
+    "ratings": 4.5,
+    "category": "Family"
+  },
+  {
+    "name": "Red-Themed Family Ensemble",
+    "description": "A striking red-themed family ensemble, designed for bold and beautiful looks for family gatherings.",
+    "price": 140000,
+    "seller": "Fashion House",
+    "stock": 8,
+    "images": [
+      {
+        "public_id": "marryme/products/36_ljg0jk",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883447/marryme/36_ljg0jk.jpg"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Family"
+  },
+  {
+    "name": "Pastel-Themed Family Ensemble",
+    "description": "A delicate pastel-themed family ensemble, perfect for softer and elegant looks.",
+    "price": 130000,
+    "seller": "Fashion House",
+    "stock": 12,
+    "images": [
+      {
+        "public_id": "marryme/products/35_ylbcvk",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883447/marryme/35_ylbcvk.png"
+      }
+    ],
+    "ratings": 4.6,
+    "category": "Family"
+  },
+  {
+    "name": "Regal Sikh Family Look",
+    "description": "A regal and traditional Sikh family look for celebrations and special occasions.",
+    "price": 160000,
+    "seller": "Fashion House",
+    "stock": 5,
+    "images": [
+      {
+        "public_id": "marryme/products/34_f3n7mu",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883446/marryme/34_f3n7mu.jpg"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Family"
+  },
+  {
+    "name": "Classic Pink Bridal Family Portrait",
+    "description": "A classic pink ensemble designed for bridal family portraits, bringing elegance and charm.",
+    "price": 180000,
+    "seller": "Bridal Couture",
+    "stock": 6,
+    "images": [
+      {
+        "public_id": "marryme/products/31_jm0exa",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883440/marryme/31_jm0exa.jpg"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Family"
+  },
+  {
+    "name": "Golden Brocade Sherwani",
+    "description": "A luxurious golden brocade sherwani for men, perfect for weddings and royal events.",
+    "price": 25000,
+    "seller": "Royal Menswear",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/Image_ocqqag",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883445/marryme/Image_ocqqag.png"
+      }
+    ],
+    "ratings": 4.9,
+    "category": "Men"
+  },
+  {
+    "name": "Rajsthani Suit",
+    "description": "A traditional Rajasthani suit with vibrant colors and intricate designs.",
+    "price": 22000,
+    "seller": "Royal Menswear",
+    "stock": 7,
+    "images": [
+      {
+        "public_id": "marryme/products/32_kyypao",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881619/marryme/32_kyypao.png"
+      }
+    ],
+    "ratings": 4.6,
+    "category": "Men"
+  },
+  {
+    "name": "Rajputi Style Sherwani",
+    "description": "A majestic Rajputi style sherwani with regal embroidery and classic colors.",
+    "price": 24000,
+    "seller": "Royal Menswear",
+    "stock": 3,
+    "images": [
+      {
+        "public_id": "marryme/products/29_frvpnu",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881618/marryme/29_frvpnu.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Men"
+  },
+  {
+    "name": "Gold Jodhpuri Suit",
+    "description": "An elegant gold jodhpuri suit, a timeless design for sophisticated occasions.",
+    "price": 2700,
+    "seller": "Royal Menswear",
+    "stock": 2,
+    "images": [
+      {
+        "public_id": "marryme/products/24_bzncl9",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881615/marryme/24_bzncl9.png"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Men"
+  },
+  {
+    "name": "Maroon Sherwani",
+    "description": "A rich maroon sherwani with intricate detailing, perfect for weddings and festive events.",
+    "price": 11300,
+    "seller": "Royal Menswear",
+    "stock": 5,
+    "images": [
+      {
+        "public_id": "marryme/products/21_arkbud",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881613/marryme/21_arkbud.png"
+      }
+    ],
+    "ratings": 4.6,
+    "category": "Men"
+  },
+  {
+    "name": "Royal Silver Elegance",
+    "description": "A royal silver elegance sherwani, an epitome of grace and sophistication.",
+    "price": 9600,
+    "seller": "Royal Menswear",
+    "stock": 6,
+    "images": [
+      {
+        "public_id": "marryme/products/20_j9erug",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881613/marryme/20_j9erug.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Men"
+  },
+  {
+    "name": "Emerald Green Kurta Set",
+    "description": "A stylish emerald green kurta set, combining tradition and modern flair.",
+    "price": 10000,
+    "seller": "Traditional Wear",
+    "stock": 10,
+    "images": [
+      {
+        "public_id": "marryme/products/19_ijttgr",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881612/marryme/19_ijttgr.png"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Men"
+  },
+  {
+    "name": "White Kurta Pajama",
+    "description": "A simple yet elegant white kurta pajama, perfect for casual family events.",
+    "price": 8000,
+    "seller": "Traditional Wear",
+    "stock": 15,
+    "images": [
+      {
+        "public_id": "marryme/products/18_ibylcx",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881612/marryme/18_ibylcx.png"
+      }
+    ],
+    "ratings": 4.5,
+    "category": "Men"
+  },
+  {
+    "name": "Royal Green Bandhgala",
+    "description": "A royal green bandhgala, a modern take on traditional attire for men.",
+    "price": 8200,
+    "seller": "Royal Menswear",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/17_pqvlfp",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881611/marryme/17_pqvlfp.png"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Men"
+  },
+  {
+    "name": "Classic Cream Sherwani",
+    "description": "A classic cream sherwani, offering an elegant and timeless look.",
+    "price": 6700,
+    "seller": "Royal Menswear",
+    "stock": 7,
+    "images": [
+      {
+        "public_id": "marryme/products/16_z4qjbb",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881611/marryme/16_z4qjbb.png"
+      }
+    ],
+    "ratings": 4.6,
+    "category": "Men"
+  },
+  {
+    "name": "Saffron Silk Saree",
+    "description": "A vibrant saffron silk saree, perfect for festive occasions and weddings.",
+    "price": 18000,
+    "seller": "Saree Couture",
+    "stock": 8,
+    "images": [
+      {
+        "public_id": "marryme/products/Image_4_dnx9ia",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883443/marryme/Image_4_dnx9ia.png"
+      }
+    ],
+    "ratings": 4.9,
+    "category": "Women"
+  },
+  {
+    "name": "Midnight Pink Saree",
+    "description": "A sophisticated midnight pink saree with intricate embroidery, designed for formal events.",
+    "price": 27000,
+    "seller": "Saree Couture",
+    "stock": 6,
+    "images": [
+      {
+        "public_id": "marryme/products/Image_3_fylixe",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883442/marryme/Image_3_fylixe.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Women"
+  },
+  {
+    "name": "Pearl Pink Lehenga",
+    "description": "A stunning pearl pink lehenga, an exquisite choice for weddings and receptions.",
+    "price": 14500,
+    "seller": "Lehenga Couture",
+    "stock": 5,
+    "images": [
+      {
+        "public_id": "marryme/products/Image_2_cajadl",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883441/marryme/Image_2_cajadl.png"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Women"
+  },
+  {
+    "name": "Ivory Dream Lehenga",
+    "description": "An ethereal ivory lehenga with delicate work, perfect for brides on their special day.",
+    "price": 28000,
+    "seller": "Lehenga Couture",
+    "stock": 3,
+    "images": [
+      {
+        "public_id": "marryme/products/Image_1_voynkb",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883440/marryme/Image_1_voynkb.png"
+      }
+    ],
+    "ratings": 4.9,
+    "category": "Women"
+  },
+  {
+    "name": "Creamy Magic Lehenga",
+    "description": "A dreamy creamy lehenga, combining luxury and traditional beauty.",
+    "price": 34900,
+    "seller": "Lehenga Couture",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/33_ouvd8v",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881620/marryme/33_ouvd8v.png"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Women"
+  },
+  {
+    "name": "Silver Blue Dress",
+    "description": "A chic silver-blue dress designed for evening parties and events.",
+    "price": 15000,
+    "seller": "Evening Wear",
+    "stock": 8,
+    "images": [
+      {
+        "public_id": "marryme/products/31_bttgvy",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881619/marryme/31_bttgvy.png"
+      }
+    ],
+    "ratings": 4.6,
+    "category": "Women"
+  },
+  {
+    "name": "Ruby Pink Lehenga",
+    "description": "A ruby pink lehenga with intricate design work, perfect for grand weddings.",
+    "price": 8600,
+    "seller": "Lehenga Couture",
+    "stock": 7,
+    "images": [
+      {
+        "public_id": "marryme/products/30_o5mhc5",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881618/marryme/30_o5mhc5.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Women"
+  },
+  {
+    "name": "Magenta Magic Lehenga",
+    "description": "A dazzling magenta lehenga designed to make a statement at weddings.",
+    "price": 21700,
+    "seller": "Lehenga Couture",
+    "stock": 5,
+    "images": [
+      {
+        "public_id": "marryme/products/22_sxiqw9",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881614/marryme/22_sxiqw9.png"
+      }
+    ],
+    "ratings": 4.9,
+    "category": "Women"
+  },
+  {
+    "name": "Ruby Red Lehenga",
+    "description": "A rich ruby red lehenga, ideal for brides who want a traditional yet glamorous look.",
+    "price": 30000,
+    "seller": "Lehenga Couture",
+    "stock": 6,
+    "images": [
+      {
+        "public_id": "marryme/products/14_rr9rtc",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881610/marryme/14_rr9rtc.png"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Women"
+  },
+  {
+    "name": "Sunshine Maroon Lehenga",
+    "description": "A maroon lehenga with golden accents, perfect for festive occasions.",
+    "price": 24000,
+    "seller": "Lehenga Couture",
+    "stock": 7,
+    "images": [
+      {
+        "public_id": "marryme/products/13_rgu3fj",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881609/marryme/13_rgu3fj.png"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Women"
+  },
+  {
+    "name": "Pastel Perfection",
+    "description": "A delicate pastel ensemble for couples, offering a soft and elegant look.",
+    "price": 32000,
+    "seller": "Couple Couture",
+    "stock": 3,
+    "images": [
+      {
+        "public_id": "marryme/products/Image_5_lavta2",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736883444/marryme/Image_5_lavta2.png"
+      }
+    ],
+    "ratings": 4.9,
+    "category": "Couples"
+  },
+  {
+    "name": "Red Suit",
+    "description": "A bold red suit for couples, combining modern and traditional styles.",
+    "price": 35000,
+    "seller": "Couple Couture",
+    "stock": 2,
+    "images": [
+      {
+        "public_id": "marryme/products/28_qelctr",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881617/marryme/28_qelctr.png"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Couples"
+  },
+  {
+    "name": "Sunshine Cream Dress",
+    "description": "A sunshine cream dress for couples, perfect for an elegant day out.",
+    "price": 28000,
+    "seller": "Couple Couture",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/27_jcwsev",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881617/marryme/27_jcwsev.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Couples"
+  },
+  {
+    "name": "Sky Blue Set",
+    "description": "A romantic sky blue set for couples, offering a fresh and light appearance.",
+    "price": 30000,
+    "seller": "Couple Couture",
+    "stock": 6,
+    "images": [
+      {
+        "public_id": "marryme/products/26_qcbked",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881616/marryme/26_qcbked.png"
+      }
+    ],
+    "ratings": 4.7,
+    "category": "Couples"
+  },
+  {
+    "name": "Ivory and Emerald Dream",
+    "description": "An ivory and emerald set for couples, ideal for formal occasions.",
+    "price": 33200,
+    "seller": "Couple Couture",
+    "stock": 5,
+    "images": [
+      {
+        "public_id": "marryme/products/25_moncds",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881616/marryme/25_moncds.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Couples"
+  },
+  {
+    "name": "Mint Pink Magic",
+    "description": "A mint pink ensemble for couples, offering a perfect balance of elegance and charm.",
+    "price": 31000,
+    "seller": "Couple Couture",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/11_bsuq0q",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881608/marryme/11_bsuq0q.png"
+      }
+    ],
+    "ratings": 4.9,
+    "category": "Couples"
+  },
+  {
+    "name": "Golden Glamour",
+    "description": "A stunning golden glamour set for couples, combining traditional opulence with contemporary appeal.",
+    "price": 35000,
+    "seller": "Couple Couture",
+    "stock": 2,
+    "images": [
+      {
+        "public_id": "marryme/products/10_zaayv3",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881608/marryme/10_zaayv3.png"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Couples"
+  },
+  {
+    "name": "Peacock Palette",
+    "description": "A peacock palette ensemble for couples, rich in colors and perfect for festive celebrations.",
+    "price": 33009,
+    "seller": "Couple Couture",
+    "stock": 3,
+    "images": [
+      {
+        "public_id": "marryme/products/9_gohenv",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881607/marryme/9_gohenv.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Couples"
+  },
+  {
+    "name": "Traditional Red and Gold",
+    "description": "A traditional red and gold ensemble for couples, designed for grand events and weddings.",
+    "price": 36800,
+    "seller": "Couple Couture",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/8_leg8am",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881607/marryme/8_leg8am.png"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Couples"
+  },
+  {
+    "name": "Sunset Orange Splendor",
+    "description": "Sunset Orange Splendor ensemble for couples, rich in colors and perfect for festive celebrations.",
+    "price": 39000,
+    "seller": "Couple Couture",
+    "stock": 3,
+    "images": [
+      {
+        "public_id": "marryme/products/7_xc0edb",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881606/marryme/7_xc0edb.png"
+      }
+    ],
+    "ratings": 4.8,
+    "category": "Couples"
+  },
+  {
+    "name": "Traditional Pink and Gold couple",
+    "description": "A traditional pink and gold ensemble for couples, designed for grand events and weddings.",
+    "price": 36800,
+    "seller": "Couple Couture",
+    "stock": 4,
+    "images": [
+      {
+        "public_id": "marryme/products/4_q8mjhi",
+        "url": "https://res.cloudinary.com/dp2zhbubx/image/upload/v1736881605/marryme/4_q8mjhi.png"
+      }
+    ],
+    "ratings": 5.0,
+    "category": "Couples"
+  }
+]
