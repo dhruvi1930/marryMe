@@ -1,14 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import CartContext from "@/context/CartContext";
 
 // Dynamically import StarRatings to avoid hydration errors
 const StarRatings = dynamic(() => import("react-star-ratings"), { ssr: false });
 
 const ProductItem = ({ product }) => {
+  const { addItemToCart } = useContext(CartContext);
+
+  const addToCartHandler = () => {
+    addItemToCart({
+      product: product._id,
+      name: product.name,
+      price: product.price,
+      image: product.images[0]?.url,
+      stock: product.stock,
+      seller: product.seller,
+    });
+  };
+
   return (
     <article className="border border-gray-200 overflow-hidden bg-white shadow-sm rounded mb-5">
       <div className="flex flex-col md:flex-row">
@@ -70,7 +84,10 @@ const ProductItem = ({ product }) => {
             </span>
             <p className="text-green-500">Free Shipping</p>
             <div className="my-3">
-              <button className="px-4 py-2 inline-block text-white bg-red-400 border border-transparent rounded-md hover:bg-blue-700 cursor-pointer">
+              <button
+                onClick={addToCartHandler}
+                className="px-4 py-2 inline-block text-white bg-red-400 border border-transparent rounded-md hover:bg-blue-700 cursor-pointer"
+              >
                 Add to Cart
               </button>
             </div>
