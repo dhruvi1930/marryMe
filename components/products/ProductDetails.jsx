@@ -60,7 +60,7 @@ const ProductDetails = ({ product }) => {
                 </svg>
                 <span className="text-green-500">Verified</span>
               </div>
-              <p className="mb-4 font-semibold text-xl">${product?.price}</p>
+              <p className="mb-4 font-semibold text-xl">₹{product?.price}</p>
               <p className="mb-4 text-gray-500">{product?.description}</p>
               <div className="flex flex-wrap gap-2 mb-5">
                 <button className="px-4 py-2 inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
