@@ -4,7 +4,14 @@ import ListProducts from "@/components/products/ListProducts";
 import queryString from "query-string";
 
 const getProducts = async (searchParams) => {
-  const urlParams = { keyword: searchParams.keyword, page: searchParams.page };
+  const urlParams = {
+    keyword: searchParams.keyword,
+    page: searchParams.page,
+    category: searchParams.category,
+    "ratings[gte]": searchParams.ratings,
+    "price[gte]": searchParams.min,
+    "price[lte]": searchParams.max,
+  };
 
   const searchQuery = queryString.stringify(urlParams);
   const { data } = await axios.get(
