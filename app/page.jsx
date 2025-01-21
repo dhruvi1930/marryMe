@@ -4,13 +4,21 @@ import ListProducts from "@/components/products/ListProducts";
 import queryString from "query-string";
 
 const getProducts = async (searchParams) => {
+  // Await searchParams to properly access its properties
+  const keyword = await searchParams.keyword;
+  const page = await searchParams.page;
+  const category = await searchParams.category;
+  const ratings = await searchParams.ratings;
+  const min = await searchParams.min;
+  const max = await searchParams.max;
+
   const urlParams = {
-    keyword: searchParams.keyword,
-    page: searchParams.page,
-    category: searchParams.category,
-    "ratings[gte]": searchParams.ratings,
-    "price[gte]": searchParams.min,
-    "price[lte]": searchParams.max,
+    keyword,
+    page,
+    category,
+    "ratings[gte]": ratings,
+    "price[gte]": min,
+    "price[lte]": max,
   };
 
   const searchQuery = queryString.stringify(urlParams);

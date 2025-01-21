@@ -11,6 +11,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "mongoose": "^8.9.5",
     "next": "15.1.4",
     "next-connect": "^0.12.1",
@@ -18,7 +20,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-js-pagination": "^3.0.3",
-    "react-star-ratings": "^2.3.0"
+    "react-star-ratings": "^2.3.0",
+    "react-toastify": "^11.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
