@@ -24,7 +24,6 @@ const CustomPagination = ({ resPerPage, productsCount }) => {
       }
 
       const path = window.location.pathname + "?" + queryParams.toString();
-      console.log(path);
       router.push(path);
     }
   };
