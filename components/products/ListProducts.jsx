@@ -16,7 +16,6 @@ const ListProducts = ({ data }) => {
             {data?.products?.map((product) => (
               <ProductItem key={product?._id} product={product} />
             ))}
-
             <CustomPagination
               resPerPage={data?.resPerPage}
               productsCount={data?.filteredProductsCount}

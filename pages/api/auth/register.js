@@ -1,10 +1,12 @@
 import dbConnect from "@/backend/config/dbConnect";
 import nextConnect from "next-connect";
 import { registerUser } from "@/backend/controller/authController";
+import onError from "@/backend/middlewares/errors";
 
-const handler = nextConnect();
+const handler = nextConnect({ onError });
 
-dbConnect;
+// Connect to the database
+dbConnect();
 
 handler.post(registerUser);
 
