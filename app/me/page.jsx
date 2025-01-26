@@ -1,25 +1,38 @@
+"use client";
 import Profile from "@/components/auth/Profile";
+import { useSession } from "next-auth/react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import React from "react";
-
-import { cookies } from "next/headers";
 
 const getAddresses = async () => {
-  const nextCookies = cookies();
-
-  const nextAuthSessionToken = nextCookies.get("next-auth.session-token");
-
   const { data } = await axios.get(`${process.env.API_URL}/api/address`, {
-    headers: {
-      Cookie: `next-auth.session-token=${nextAuthSessionToken?.value}`,
-    },
+    withCredentials: true, // Ensure cookies are sent
   });
 
   return data?.addresses;
 };
 
-const ProfilePage = async () => {
-  const addresses = await getAddresses();
+const ProfilePage = () => {
+  const { data: session, status } = useSession();
+  const [addresses, setAddresses] = useState([]);
+
+  useEffect(() => {
+    const fetchAddresses = async () => {
+      if (status === "authenticated") {
+        try {
+          const addresses = await getAddresses();
+          setAddresses(addresses);
+        } catch (error) {
+          console.error("Error fetching addresses:", error);
+        }
+      }
+    };
+
+    fetchAddresses();
+  }, [status]);
+
+  if (status === "loading") return <p>Loading...</p>;
+  if (status === "unauthenticated") return <p>Please log in first.</p>;
 
   return <Profile addresses={addresses} />;
 };

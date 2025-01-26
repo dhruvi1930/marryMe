@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const UserAddresses = ({ addresses }) => {
-  return addresses.map((address) => (
+  return addresses?.map((address) => (
     <Link href={`/address/${address._id}`} key={address._id}>
       <div className="mb-5 gap-4">
         <figure className="w-full bg-gray-100 rounded-md p-4 flex align-center cursor-pointer">

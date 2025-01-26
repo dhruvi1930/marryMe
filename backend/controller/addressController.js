@@ -47,7 +47,8 @@ export const deleteAddress = async (req, res) => {
   if (!address) {
     return next(new ErrorHandler("Address not found", 404));
   }
-  await address.remove();
+
+  await Address.findByIdAndDelete(req.query.id);
 
   res.status(200).json({
     success: true,

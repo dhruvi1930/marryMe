@@ -1,7 +1,8 @@
 import Header from "@/components/layouts/Header";
+import { GlobalProvider } from "./GlobalProvider";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { GlobalProvider } from "./GlobalProvider";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function RootLayout({ children }) {
   return (
