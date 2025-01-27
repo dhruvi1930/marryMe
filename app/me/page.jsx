@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const getAddresses = async () => {
-  const { data } = await axios.get(`${process.env.API_URL}/api/address`, {
+  const { data } = axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/address`, {
     withCredentials: true, // Ensure cookies are sent
   });
 

@@ -32,10 +32,15 @@ export const authOptions = {
     }),
   ],
   callbacks: {
-    jwt: async ({ token, user }) => {
+    jwt: async ({ token, user, credentials }) => {
       if (user) {
         token.user = user;
       }
+
+      // if (req?.url === "/api/auth/session?update") {
+      //   const updateUser = await User.findById(token.user._id);
+      //   token.user = updateUser;
+      // }
       return token;
     },
     session: async ({ session, token }) => {

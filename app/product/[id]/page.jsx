@@ -3,7 +3,9 @@ import axios from "axios";
 import React from "react";
 
 const getProductDetails = async (id) => {
-  const { data } = await axios.get(`${process.env.API_URL}/api/products/${id}`);
+  const { data } = await axios.get(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/products/${id}`
+  );
   return data?.product;
 };
 
