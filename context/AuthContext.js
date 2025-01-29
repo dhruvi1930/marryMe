@@ -117,6 +117,25 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const updatePassword = async ({ currentPassword, newPassword }) => {
+    try {
+      const { data } = await axios.put(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/me/update_password`,
+        {
+          currentPassword,
+          newPassword,
+        }
+      );
+
+      if (data?.success) {
+        router.replace("/me");
+      }
+    } catch (error) {
+      console.log(error.response);
+      setError(error?.response?.data?.message);
+    }
+  };
+
   const clearErrors = () => {
     setError(null);
   };
@@ -135,7 +154,7 @@ export const AuthProvider = ({ children }) => {
         addNewAddress,
         updateAddress,
         deleteAddress,
-
+        updatePassword,
         clearErrors,
       }}
     >
