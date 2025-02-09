@@ -10,6 +10,5 @@ const handler = nextConnect({ onError });
 dbConnect();
 
 handler.get(getProducts);
-handler.post(newProduct);
 
 export default handler;
