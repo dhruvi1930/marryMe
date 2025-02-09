@@ -24,7 +24,7 @@ const Profile = ({ addresses }) => {
           <h5 className="font-semibold text-lg">{user?.name}</h5>
           <p>
             <b>Email:</b> {user?.email} | <b>Joined On:</b>
-            {user?.createdAt.substring(0, 10)}
+            {user?.createdAt?.substring(0, 10)}
           </p>
         </figcaption>
       </figure>

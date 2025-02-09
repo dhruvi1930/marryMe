@@ -131,7 +131,6 @@ export const AuthProvider = ({ children }) => {
         router.replace("/me");
       }
     } catch (error) {
-      console.log(error.response);
       setError(error?.response?.data?.message);
     }
   };

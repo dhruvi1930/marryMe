@@ -2,9 +2,10 @@
 
 import CartContext from "@/context/CartContext";
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import BreadCrumbs from "../layouts/BreadCrumbs";
+import axios from "axios";
 
 const Shipping = ({ addresses }) => {
   const { cart } = useContext(CartContext);
@@ -20,6 +21,22 @@ const Shipping = ({ addresses }) => {
       return toast.error("Please select your shipping address");
     } else {
       // move to stripe checkoutpage
+      try {
+        const { data } = await axios.post(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/orders/checkout_session`,
+          {
+            items: cart?.cartItems,
+            shippingInfo,
+          },
+          {
+            withCredentials: true,
+          }
+        );
+
+        window.location.href = data.url;
+      } catch (error) {
+        console.error(error.resposne);
+      }
     }
   };
 
@@ -116,10 +133,10 @@ const Shipping = ({ addresses }) => {
 
                 <h2 className="text-lg font-semibold mb-3">Items in cart</h2>
 
-                {cart?.cartItems?.map((item) => (
+                {cart?.cartItems?.map((item, index) => (
                   <figure
+                    key={item._id || index}
                     className="flex items-center mb-4 leading-5"
-                    key={cart}
                   >
                     <div>
                       <div className="block relative w-20 h-20 rounded p-1 border border-gray-200">

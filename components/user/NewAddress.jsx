@@ -29,7 +29,6 @@ const NewAddress = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const newAddress = { street, city, state, zipCode, phoneNo, country };
-    console.log(newAddress);
     addNewAddress(newAddress);
   };
 

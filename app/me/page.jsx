@@ -18,8 +18,6 @@ const getAddresses = async () => {
       }
     );
 
-    console.log(data);
-
     return data?.addresses;
   } catch (error) {
     console.error("Error fetching addresses:", error);
