@@ -21,6 +21,7 @@
     "next-auth": "^4.24.11",
     "next-connect": "^0.12.1",
     "query-string": "^9.1.1",
+    "raw-body": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-js-pagination": "^3.0.2",
