@@ -1,7 +1,26 @@
 import getRawBody from "raw-body";
 import Stripe from "stripe";
 import Order from "../models/order";
+import APIFilters from "../utils/APIFilters";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+export const myOrders = async (req, res) => {
+  const resPerPage = 3;
+  const ordersCount = await Order.countDocuments();
+  const apiFilters = new APIFilters(Order.find(), req.query).pagination(
+    resPerPage
+  );
+
+  const orders = await apiFilters.query
+    .find({ user: req.user._id })
+    .populate("shippingInfo user");
+
+  res.status(200).json({
+    ordersCount,
+    resPerPage,
+    orders,
+  });
+};
 
 export const checkoutSession = async (req, res) => {
   try {
@@ -106,8 +125,6 @@ export const webhook = async (req, res) => {
       const line_items = await stripe.checkout.sessions.listLineItems(
         event.data.object.id
       );
-
-      console.log(line_items);
 
       const orderItems = await getCartItems(line_items);
       const userId = session.client_reference_id;
