@@ -135,6 +135,38 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const updateUser = async (id, userData) => {
+    try {
+      const { data } = await axios.put(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/admin/users/${id}`,
+        {
+          userData,
+        }
+      );
+
+      if (data?.success) {
+        setUpdated(true);
+        router.replace(`/admin/users/${id}`);
+      }
+    } catch (error) {
+      setError(error?.response?.data?.message);
+    }
+  };
+
+  const deleteUser = async (id) => {
+    try {
+      const { data } = await axios.delete(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/admin/users/${id}`
+      );
+
+      if (data?.success) {
+        router.replace(`/admin/users`);
+      }
+    } catch (error) {
+      setError(error?.response?.data?.message);
+    }
+  };
+
   const clearErrors = () => {
     setError(null);
   };
@@ -154,6 +186,8 @@ export const AuthProvider = ({ children }) => {
         updateAddress,
         deleteAddress,
         updatePassword,
+        updateUser,
+        deleteUser,
         clearErrors,
       }}
     >
