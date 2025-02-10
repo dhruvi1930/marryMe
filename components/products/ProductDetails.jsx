@@ -1,12 +1,24 @@
 "use client";
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import StarRatings from "react-star-ratings";
 import BreadCrumbs from "../layouts/BreadCrumbs";
 import CartContext from "@/context/CartContext";
+import NewReview from "../review/NewReview";
+import OrderContext from "@/context/OrderContext";
+import Reviews from "../review/Reviews";
 
 const ProductDetails = ({ product }) => {
   const { addItemToCart } = useContext(CartContext);
+  const { canUserReview, canReview } = useContext(OrderContext);
+
+  const [showStarRatings, setShowStarRatings] = useState(false);
+
+  useEffect(() => {
+    canUserReview(product?._id);
+    setShowStarRatings(true);
+  }, []);
+
   const inStock = product?.stock >= 1;
 
   const addToCartHandler = () => {
@@ -53,14 +65,16 @@ const ProductDetails = ({ product }) => {
               <h2 className="font-semibold text-2xl mb-4">{product?.name}</h2>
               <div className="flex flex-wrap items-center space-x-2 mb-2">
                 <div className="ratings">
-                  <StarRatings
-                    rating={product?.ratings}
-                    starRatedColor="#ffb829"
-                    numberOfStars={5}
-                    starDimension="20px"
-                    starSpacing="2px"
-                    name="rating"
-                  />
+                  {showStarRatings && (
+                    <StarRatings
+                      rating={product?.ratings}
+                      starRatedColor="#ffb829"
+                      numberOfStars={5}
+                      starDimension="20px"
+                      starSpacing="2px"
+                      name="rating"
+                    />
+                  )}
                 </div>
                 <span className="text-yellow-500">{product?.ratings}</span>
                 <svg
@@ -106,11 +120,13 @@ const ProductDetails = ({ product }) => {
               </ul>
             </main>
           </div>
+          {canReview && <NewReview product={product} />}
           <hr />
           <div className="font-semibold">
             <h1 className="text-gray-500 review-title mb-6 mt-10 text-2xl">
               Other Customers Reviews
             </h1>
+            <Reviews reviews={product?.reviews} />
           </div>
         </div>
       </section>

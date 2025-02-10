@@ -109,3 +109,53 @@ export const deleteProduct = async (req, res, next) => {
     success: true,
   });
 };
+
+export const createProductReview = async (req, res, next) => {
+  try {
+    const { rating, comment, productId } = req.body;
+
+    if (!req.user || !req.user._id) {
+      return next(new ErrorHandler("User not authenticated.", 401));
+    }
+
+    let product = await Product.findById(productId);
+    if (!product) {
+      return next(new ErrorHandler("Product not found.", 404));
+    }
+
+    console.log("Existing Reviews Debug:", product.reviews);
+
+    // Remove invalid reviews (missing user)
+    product.reviews = product.reviews.filter((r) => r.user);
+
+    const existingReviewIndex = product.reviews.findIndex(
+      (r) => r.user.toString() === req.user._id.toString()
+    );
+
+    if (existingReviewIndex !== -1) {
+      product.reviews[existingReviewIndex].comment = comment;
+      product.reviews[existingReviewIndex].rating = rating;
+    } else {
+      const review = {
+        user: req.user._id, // Ensure user ID is included
+        rating: Number(rating),
+        comment,
+      };
+      product.reviews.push(review);
+    }
+
+    product.ratings =
+      product.reviews.reduce((acc, item) => item.rating + acc, 0) /
+      product.reviews.length;
+
+    await product.save(); // Save updated product
+
+    res.status(200).json({
+      success: true,
+      message: "Review added successfully!",
+    });
+  } catch (error) {
+    console.error("Error in createProductReview:", error);
+    next(error);
+  }
+};
