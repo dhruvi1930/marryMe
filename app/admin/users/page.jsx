@@ -3,12 +3,15 @@ import React from "react";
 
 import { cookies } from "next/headers";
 import queryString from "query-string";
+import { getCookieName } from "@/helpers/helpers";
 import Users from "@/components/admin/Users";
 
 const getUsers = async (searchParams) => {
   try {
     const nextCookies = cookies();
-    const nextAuthSessionToken = nextCookies.get("next-auth.session-token");
+    const cookieName = getCookieName();
+
+    const nextAuthSessionToken = nextCookies.get(cookieName);
 
     const urlParams = {
       page: searchParams.page || 1,
@@ -21,7 +24,7 @@ const getUsers = async (searchParams) => {
 
     const { data } = await axios.get(apiUrl, {
       headers: {
-        Cookie: `next-auth.session-token=${nextAuthSessionToken?.value}`,
+        Cookie: `${nextAuthSessionToken?.name}=${nextAuthSessionToken?.value}`,
       },
     });
 
