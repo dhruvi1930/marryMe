@@ -42,7 +42,7 @@ const ProductItem = ({ product }) => {
       <div className="p-4 flex-1 flex flex-col justify-between">
         <div>
           <Link
-            className="hover:text-blue-600 font-semibold text-lg"
+            className="hover:text-red-600 font-semibold text-lg"
             href={`/product/${product._id}`}
           >
             {product.name}

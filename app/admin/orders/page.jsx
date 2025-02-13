@@ -6,15 +6,14 @@ import ListOrders from "@/components/orders/ListOrders";
 import Orders from "@/components/admin/Orders";
 
 const getOrders = async (searchParams) => {
-  const nextCookies = cookies();
+  const resolvedSearchParams = await searchParams;
+  const page = resolvedSearchParams?.page || 1;
 
-  const nextAuthSessionToken = nextCookies.get("next-auth.session-token");
-
-  const urlParams = {
-    page: searchParams.page || 1,
-  };
-
+  const urlParams = { page };
   const searchQuery = queryString.stringify(urlParams);
+
+  const nextCookies = cookies();
+  const nextAuthSessionToken = nextCookies.get("next-auth.session-token");
 
   const { data } = await axios.get(
     `${process.env.NEXT_PUBLIC_API_URL}/api/admin/orders?${searchQuery}`,

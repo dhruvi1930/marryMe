@@ -78,7 +78,7 @@ const Register = () => {
         <hr className="mt-4" />
         <p className="text-center mt-5">
           Already have an account?
-          <Link href="/login" className="text-blue-500">
+          <Link href="/login" className="text-red-500">
             Sign In
           </Link>
         </p>

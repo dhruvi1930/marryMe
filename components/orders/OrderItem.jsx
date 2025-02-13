@@ -2,9 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 const OrderItem = ({ order }) => {
-  console.log(order);
   return (
-    <article className="p-3 lg:p-5 mb-5 bg-white border border-blue-600 rounded-md">
+    <article className="p-3 lg:p-5 mb-5 bg-white border border-red-600 rounded-md">
       <header className="lg:flex justify-between mb-4">
         <div className="mb-4 lg:mb-0">
           <p className="font-semibold">

@@ -62,7 +62,7 @@ const Shipping = ({ addresses }) => {
                   {addresses?.map((address) => (
                     <label
                       key={address?.zipCode}
-                      className="flex p-3 border border-gray-200 rounded-md bg-gray-50 hover:border-blue-400 hover:bg-blue-50 cursor-pointer"
+                      className="flex p-3 border border-gray-200 rounded-md bg-gray-50 hover:border-red-400 hover:bg-red-50 cursor-pointer"
                       onClick={() => setShippingAddress(address)}
                     >
                       <span>
@@ -88,7 +88,7 @@ const Shipping = ({ addresses }) => {
 
                 <Link
                   href="/address/new"
-                  className="px-4 py-2 inline-block text-blue-600 border border-gray-300 rounded-md hover:bg-gray-100"
+                  className="px-4 py-2 inline-block text-red-600 border border-gray-300 rounded-md hover:bg-gray-100"
                 >
                   <i className="mr-1 fa fa-plus"></i> Add new address
                 </Link>
@@ -96,7 +96,7 @@ const Shipping = ({ addresses }) => {
                 <div className="flex justify-end space-x-2 mt-10">
                   <Link
                     href="/cart"
-                    className="px-5 py-2 inline-block text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:text-blue-600"
+                    className="px-5 py-2 inline-block text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:text-red-600"
                   >
                     Back
                   </Link>

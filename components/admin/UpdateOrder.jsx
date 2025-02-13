@@ -29,7 +29,7 @@ const UpdateOrder = ({ order }) => {
     updateOrder(orderData, order?._id);
   };
   return (
-    <article className="p-3 lg:p-5 mb-5 bg-white border border-blue-600 rounded-md">
+    <article className="p-3 lg:p-5 mb-5 bg-white border border-red-600 rounded-md">
       <header className="lg:flex justify-between mb-4">
         <div className="mb-4 lg:mb-0">
           <p className="font-semibold">
@@ -138,7 +138,7 @@ const UpdateOrder = ({ order }) => {
       <button
         type="submit"
         onClick={() => submitHandler()}
-        className="mb-2 px-4 py-2 text-center w-full inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
+        className="mb-2 px-4 py-2 text-center w-full inline-block text-white bg-red-600 border border-transparent rounded-md hover:bg-red-700"
       >
         Update
       </button>

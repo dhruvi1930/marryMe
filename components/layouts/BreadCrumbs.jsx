@@ -4,7 +4,7 @@ import React from "react";
 
 const BreadCrumbs = ({ breadCrumbs }) => {
   return (
-    <section className="py-5 sm:py-7 bg-blue-100">
+    <section className="py-5 sm:py-7 bg-red-100">
       <div className="container max-w-screen-xl mx-auto px-4">
         <ol className="inline-flex flex-wrap text-gray-600 space-x-1 md:space-x-3 items-center">
           {breadCrumbs?.map((breadCrumb, index) => (
@@ -14,7 +14,7 @@ const BreadCrumbs = ({ breadCrumbs }) => {
             >
               <Link
                 href={breadCrumb.url}
-                className="text-gray-600 hover:text-blue-600"
+                className="text-gray-600 hover:text-red-600"
               >
                 {breadCrumb.name}
               </Link>
